@@ -16,7 +16,7 @@ spec:
         "kubernetes.io/os": linux
       containers:
       - name: store-admin
-        image: {{ .Values.storeAdmin.image.repository }}:{{ .Values.storeAdmin.image.tag }}
+        image: {{ .Values.acrName }}/{{ .Values.storeAdmin.image.repository }}:{{ .Values.storeAdmin.image.tag }}
         ports:
         - containerPort: 8081
           name: store-admin

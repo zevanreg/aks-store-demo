@@ -16,7 +16,7 @@ spec:
         "kubernetes.io/os": linux
       containers:
       - name: product-service
-        image: {{ .Values.productService.image.repository }}:{{ .Values.productService.image.tag }}
+        image: {{ .Values.acrName }}/{{ .Values.productService.image.repository }}:{{ .Values.productService.image.tag }}
         ports:
         - containerPort: 3002
         env: 
@@ -28,7 +28,7 @@ spec:
             memory: 1Mi
           limits:
             cpu: 2m
-            memory: 20Mi
+            memory: 10Mi
         readinessProbe:
           httpGet:
             path: /health
