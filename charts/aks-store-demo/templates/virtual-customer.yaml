@@ -26,6 +26,6 @@ spec:
           requests:
             cpu: 1m
             memory: 1Mi
-          limits:
-            cpu: 1m
-            memory: 10Mi
+          # limits:
+          #   cpu: 1m
+          #   memory: 10Mi
