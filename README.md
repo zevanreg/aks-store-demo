@@ -22,7 +22,7 @@ products:
 - azure-managed-grafana
 - azure-key-vault
 urlFragment: aks-store-demo
-name: AKS Store Demo
+name: AKS Store Demo 
 description: This sample demo app consists of a group of containerized microservices that can be easily deployed into an Azure Kubernetes Service (AKS) cluster. 
 ---
 <!-- YAML front-matter schema: https://review.learn.microsoft.com/en-us/help/contribute/samples/process/onboarding?branch=main#supported-metadata-fields-for-readmemd -->
