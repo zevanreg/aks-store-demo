@@ -17,6 +17,11 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
         std::process::exit(1);
     }
 
+    if orders_per_hour > 1000 {
+        println!("Please set the ORDERS_PER_HOUR environment variable to be less or equal to 1000");
+        std::process::exit(1);
+    }
+
     println!("Orders to process per hour: {}", orders_per_hour);
 
     let minutes: f64 = 60.0;
